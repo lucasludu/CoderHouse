@@ -92,10 +92,14 @@ function AgregarPrestamo(tasa) {
 
 
 function Main() {
+
+    // Agrego prestamo
     let prestamo = AgregarPrestamo(0.05);
 
+    // Realizo pago de cuotas automaticamente
     var cuotas = prestamo.CalcularPagoAutomatico();
 
+    // Se muestra datos.
     console.log("Prestamo: " + prestamo.monto);
     cuotas.forEach((pago, index) => {
         const i = index + 1;
@@ -103,8 +107,7 @@ function Main() {
     })
     console.log("Monto total a pagar: " + prestamo.CalcularTotal());
 
-
-    // Ejemplo de filtrado: Mostrar el pago de una cuota específica
+    // Realizo filtro de las cuotas que son menos al 10% del prestamo.
     const cuotaFiltrada = prestamo.FiltrarPago((pago) => pago < parseFloat(prestamo.monto) / 10);
     if (cuotaFiltrada.length > 0) {
         console.log("\nCuotas menores al 10% del monto del préstamo:");
@@ -116,6 +119,7 @@ function Main() {
         console.log("\nNo hay cuotas menores al 10% del monto del préstamo.");
     }
 
+    // Busco una determinada cuota.
     let busca = parseFloat(prompt("Ingrese cuota a buscar: "));
     const cuotaBuscar = cuotas.filter((pago, index) => index === busca);
     if (cuotaBuscar.length > 0) {
@@ -126,7 +130,5 @@ function Main() {
 
 }
 
-
-
-
+// Ejecuto lo realizado.
 Main();
