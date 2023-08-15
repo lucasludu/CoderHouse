@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: lightblue;
+    height: 50%;
+    width: 50%;
+}
+
+#btnAgregarPrestamo,
+#btnPagos,
+#btnLimpiarLS,
+#btnVerPrestamo {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+}
+
+#btnAgregarPrestamo {
+    background-color: #28a745;
+}
+
+#btnAgregarPrestamo:hover {
+    background-color: #fff;
+    color: #28a745;
+}
+
+#btnPagos {
+    background-color: coral;
+}
+
+#btnPagos:hover {
+    background-color: #fff;
+    color: coral;
+}
+
+#btnVerPrestamo {
+    background-color: #dc3545;
+}
+
+#btnVerPrestamo:hover {
+    background-color: #fff;
+    color: #dc3545;
+}
+
+#btnLimpiarLS {
+    background-color: blue;
+    color: #fff;
+}
+
+#btnLimpiarLS:hover {
+    background-color: #fff;
+    color: blue;
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+.labelFiltro {
+    color: blue;
+    font-size: 14px;
+    display: block;
+}
