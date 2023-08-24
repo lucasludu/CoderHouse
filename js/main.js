@@ -1,4 +1,6 @@
-/** DECLARACION DE VARIABLES **/
+
+/********** DECLARACIÓN Y VARIABLES **********
+**********************************************/
 import Pago from './Models/Pago.js'; // Ruta relativa al archivo Prestamo.js
 import Prestamo from './Models/Prestamo.js'; // Ruta relativa al archivo Prestamo.js
 
