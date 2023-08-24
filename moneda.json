@@ -1,0 +1,24 @@
+{
+    "monedas": [
+        {
+            "nombre": "dolar",
+            "codigo": "U$S",
+            "valor": 370
+        },
+        {
+            "nombre": "euro",
+            "codigo": "EUR",
+            "valor": 400
+        },
+        {
+            "nombre": "real",
+            "codigo": "R$",
+            "valor": 80
+        },
+        {
+            "nombre": "pesos argentinos",
+            "codigo": "ARS$",
+            "valor": 1
+        }
+    ]
+}

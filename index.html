@@ -6,26 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crédito Bancario</title>
     <link rel="stylesheet" href="css/style.css">
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
-        crossorigin="anonymous"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Sistema de Préstamo (Simulador)</h1>
-        <button id="btnAgregarPrestamo">Agregar Préstamo</button>
-        <button id="btnVerPrestamo">Mostrar Préstamo</button>
-        <button id="btnPagos">Mostrar Pagos</button>        
-        <button id="btnLimpiarLS">Limpiar LS</button>        
+        <div class="section section-loan">
+            <h1>Sistema de Préstamo (Simulador)</h1>
+            <button id="btnAgregarPrestamo">Agregar Préstamo</button>
+            <button id="btnVerPrestamo">Mostrar Préstamo</button>
+            <button id="btnPagos">Mostrar Pagos</button>
+            <button id="btnLimpiarLS">Limpiar LS</button>
+        </div>
+
+        <div class="section section-converter">
+            <h1>Conversor de moneda</h1>
+            <label for="amount">Monto a ingresar:</label>
+            <div class="converter-input">
+                <input type="number" id="amount" placeholder="Ingrese el monto">
+                <button id="btnConvert">Convertir</button>
+            </div>
+            <label for="fromCurrency">Origen:</label>
+            <select id="fromCurrency">
+                <option value="ARS$">Peso Argentino</option>
+                <option value="U$S">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="R$">Real</option>
+            </select>
+
+            <label for="toCurrency">Destino:</label>
+            <select id="toCurrency">
+                <option value="ARS$">Peso Argentino</option>
+                <option value="U$S">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="R$">Real</option>
+            </select>
+            <p id="result">...</p>
+        </div>
     </div>
     <script type="module" src="js/main.js"></script>
-
 </body>
 
 </html>
